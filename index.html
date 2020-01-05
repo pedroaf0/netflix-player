@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>black mirror</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onkeydown="key()" onload="load_video()" class="naoSelecionavel">
+
+    <div onmousemove="hover()" id="overlay">
+        <div id="text">
+          <span style="font-size:20px;opacity: 0.5;" >você está assistindo a</span><br>
+          <span style="font-size:60px;" id="nome2" >black Mirror</span>
+          </div> 
+    </div>
+
+<div onclick="play()">
+<video onmousemove="hover()"  autoplay loop id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="video/mp4"></video>
+</div>
+<div id="content" class="content">
+    <div class="chrome">
+        <input type="range" min="0" onchange="video_time_update()" oninput="video_time_update()" value="0" id="video_slider"/>
+    </div>
+    <div style="position:absolute;bottom:10px;">
+      
+        <i id="play" onclick="play()" class="material-icons" style="font-size: 40px;padding: 10px;">pause</i> 
+        <i onclick="replay(10)" class="material-icons" style="font-size: 40px;padding: 10px;">replay_10</i> 
+        <i onclick="replay(5)" class="material-icons" style="font-size: 40px;padding: 10px;">replay_5</i> 
+
+        <i id="volume" onclick="volume()" class="material-icons" style="font-size: 40px;padding: 10px;">volume_up</i> 
+          
+      
+
+
+
+        <span style="font-weight: bold;position:absolute;bottom:10px;white-space: nowrap;padding: 10px;" id="nome" >black mirror</span>
+    </div>
+        <div style="right: 10px;position:absolute;bottom:10px;">
+            <div class="tooltip"><i class="material-icons" style="font-size: 40px;padding: 10px;">help_outline</i>
+                <span class="tooltiptext">Feito por <a href="https://github.com/pedroaf0">Pedroaf0</a></span>
+              </div>
+
+
+         
+        <i class="material-icons" style="font-size: 40px;padding: 10px;">subtitles</i>  
+        <i id="full" onclick="full()" class="material-icons" style="font-size: 40px;padding: 10px;">fullscreen</i>
+    </div>
+</div>
+ 	
+
+<script src="jquery.min.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>
