@@ -79,9 +79,9 @@ function load_video(){
     if (getUrlVars()["v"] != undefined) video.src = getUrlVars()["v"];
     if (getUrlVars()["mudo"] != undefined) video.volume = 0;
     if (getUrlVars()["nome"] != undefined){ 
-        document.getElementById("nome").innerHTML = getUrlVars()["nome"];
-        document.getElementById("nome2").innerHTML = getUrlVars()["nome"];
-        document.title = "Netflix - "+getUrlVars()["nome"];
+        document.getElementById("nome").innerHTML = decodeURI(getUrlVars()["nome"]);
+        document.getElementById("nome2").innerHTML = decodeURI(getUrlVars()["nome"]);
+        document.title = "Netflix - "+decodeURI(getUrlVars()["nome"]);
       }
       
 }
