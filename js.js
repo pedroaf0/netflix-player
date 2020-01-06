@@ -75,7 +75,7 @@ function load_video(){
     console.log(video.src);
     console.log(getUrlVars()["v"]);
     console.log(getUrlVars()["mudo"]);
-    video_slider_f()
+    
     if (getUrlVars()["v"] != undefined) video.src = getUrlVars()["v"];
     if (getUrlVars()["mudo"] != undefined) video.volume = 0;
     if (getUrlVars()["nome"] != undefined){ 
@@ -83,6 +83,7 @@ function load_video(){
         document.getElementById("nome2").innerHTML = getUrlVars()["nome"];
         document.title = "Netflix - "+getUrlVars()["nome"];
       }
+      
 }
 
 function volume(){
@@ -139,10 +140,9 @@ function slider_css() {
     video_slider.style = 'background: linear-gradient(to right, red 0% ' + x + '%, #fff ' + x + '%, white 100%) '
   };
 
-function video_slider_f() {
-video_slider.max = Math.round(video.duration);
-}
+
 video.ontimeupdate = function(){
+  video_slider.max = Math.round(video.duration);
   console.log(video.currentTime);
   video_slider.value = Math.round(video.currentTime);
   slider_css(); 

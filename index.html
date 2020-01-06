@@ -18,11 +18,11 @@
     </div>
 
 <div onclick="play()">
-<video onmousemove="hover()"  autoplay loop id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="video/mp4"></video>
+<video onmousemove="hover()"  autoplay id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="video/mp4"></video>
 </div>
 <div id="content" class="content">
     <div class="chrome">
-        <input type="range" min="0" onchange="video_time_update()" oninput="video_time_update()" value="0" id="video_slider"/>
+        <input type="range" min="0" onchange="video_time_update();hover();" oninput="video_time_update();hover()" value="0" id="video_slider"/>
     </div>
     <div style="position:absolute;bottom:10px;">
       
