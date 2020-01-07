@@ -21,7 +21,7 @@
 Use "&" para concatenar parametros. Exs:<br>
 - https://pedroaf0.github.io/netflix-player/?nome=Algorithm&v=https://vdn.libreflix.org/video/algorithm-o-filme-hacker/algorithm-o-filme-hacker.360.mp4
 <br><br>
-- https://pedroaf0.github.io/?nome=Dominion&v=https://vdn.libreflix.org/video/dominion/dominion.480.mp4
+- https://pedroaf0.github.io/netflix-player/?nome=Dominion&v=https://vdn.libreflix.org/video/dominion/dominion.480.mp4
 
 <br><br>
 ![1](https://user-images.githubusercontent.com/54213349/71787399-fdd04800-2ff5-11ea-8064-053b08b10f4f.JPG)
