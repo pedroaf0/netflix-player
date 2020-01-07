@@ -10,16 +10,18 @@
   <tr>
     <td>v=</td>
     <td>Url do video, <br>caminho absoluto</td>
-    <td>https://pedroaf0.github.io/netflix-player/?v=https://download.blender.org/peach/trailer/trailer_400p.ogg</td>
+    <td>https://pedroaf0.github.io/netflix-player/?v=https://vdn.libreflix.org/video/algorithm-o-filme-hacker/algorithm-o-filme-hacker.360.mp4</td>
   </tr>
   <tr>
     <td>nome=</td>
     <td>Nome do filme</td>
-    <td>https://pedroaf0.github.io/netflix-player/?nome=Big%20Buck%20Bunny</td>
+    <td>https://pedroaf0.github.io/netflix-player/?nome=Algorithm</td>
   </tr>
 </table>
-Use "&" para concatenar parametros. Ex:
-https://pedroaf0.github.io/netflix-player/?nome=Big%20Buck%20Bunny&v=https://download.blender.org/peach/trailer/trailer_400p.ogg
+Use "&" para concatenar parametros. Exs:
+https://pedroaf0.github.io/netflix-player/?nome=Algorithm&v=https://vdn.libreflix.org/video/algorithm-o-filme-hacker/algorithm-o-filme-hacker.360.mp4
+
+https://pedroaf0.github.io/?nome=Dominion&v=https://vdn.libreflix.org/video/dominion/dominion.480.mp4
 
 <br><br>
 ![1](https://user-images.githubusercontent.com/54213349/71787399-fdd04800-2ff5-11ea-8064-053b08b10f4f.JPG)
