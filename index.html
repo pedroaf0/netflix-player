@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>black mirror</title>
+    <title>Black Mirror</title>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <div style="position:fixed; height:100%; width:100%; background-color: black;top:0;left:0; z-index:999; opacity: 0.8;" id="turn">
+    <img style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0; width:100%;" src="Animação-de-Rotação.gif" /><br>
+    </div>
+    <style>
+	@media only screen and (orientation:landscape){
+  #turn{ display:none; }
+}
+@media only screen and (orientation:portrait){
+  #turn{ display:block; }
+}
+    </style>
 </head>
 <body onkeydown="key()" onload="load_video()" class="naoSelecionavel">
 
     <div onmousemove="hover()" id="overlay">
         <div id="text">
           <span style="font-size:20px;opacity: 0.5;" >você está assistindo a</span><br>
-          <span style="font-size:60px;" id="nome2" >black Mirror</span>
+          <span style="font-size:60px;" id="nome2" >Black Mirror</span>
           </div> 
     </div>
 
 <div onclick="play()">
-<video onmousemove="hover()"  autoplay id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="video/mp4"></video>
+<video onmousemove="hover()"  autoplay id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="application/x-mpegURL"></video>
 </div>
 <div id="content" class="content">
     <div class="chrome">
