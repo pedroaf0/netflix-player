@@ -15,7 +15,8 @@
 	"icons" : [
 		{
 			"src": "icon.png",
-			"sizes": "300x300"
+            "sizes": "300x300",
+            "type":"image/png"
 		}
 		],
 	"screenshots" : [],
