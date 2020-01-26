@@ -1,0 +1,23 @@
+{
+	"dir" : "ltr",
+	"lang" : "Romansh",
+	"name" : "Netflix",
+	"scope" : "/netflix-player/",
+	"display" : "fullscreen",
+	"start_url" : "https://pedroaf0.github.io/netflix-player/",
+	"short_name" : "Netflix",
+	"theme_color" : "transparent",
+	"description" : "Netflix",
+	"orientation" : "landscape",
+	"background_color" : "transparent",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [
+		{
+			"src": "icon.png",
+			"sizes": "300x300"
+		}
+		],
+	"screenshots" : [],
+	"generated" : "true"
+}
