@@ -66,8 +66,17 @@
 <script src="push.min.js"></script>
 <script>
 
-Push.create('Hello World!')
-
+Push.create("Hello world!", {
+    body: "How's it hangin'?",
+    icon: '/icon.png',
+    link: 'index.html',
+    requireInteraction: 'true',
+    vibrate:[200],
+    onClick: function () {
+        window.focus();
+        this.close();
+    }
+});
   
 // This is the "Offline page" service worker
 
