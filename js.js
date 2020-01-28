@@ -132,18 +132,15 @@ function video_time_update(){
 }
 
 function slider_css() {
-  console.log()
   
-    console.log(video_slider.value);
     x = (video_slider.value * 100) / video_slider.max;
-    console.log(x);
     video_slider.style = 'background: linear-gradient(to right, red 0% ' + x + '%, #fff ' + x + '%, white 100%) '
   };
 
 
 video.ontimeupdate = function(){
   video_slider.max = Math.round(video.duration);
-  console.log(video.currentTime);
   video_slider.value = Math.round(video.currentTime);
   slider_css(); 
+  vibra();
 }

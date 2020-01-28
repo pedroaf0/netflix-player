@@ -31,9 +31,9 @@
     </div>
 
 <div onclick="play()">
-<video onmousemove="hover()"  autoplay id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4" type="application/x-mpegURL"></video>
+<video onmousemove="hover()"  autoplay id="myVideo" src="black-mirror-season-5-official-trailer-netflix.mp4"></video>
 </div>
-<div id="content" class="content">
+<div onmousemove="hover()" id="content" class="content">
     <div class="chrome">
         <input type="range" min="0" onchange="video_time_update();hover();" oninput="video_time_update();hover()" value="0" id="video_slider"/>
     </div>
@@ -55,28 +55,12 @@
             <div class="tooltip"><i class="material-icons" style="font-size: 40px;padding: 10px;">help_outline</i>
                 <span class="tooltiptext">Feito por <a href="https://github.com/pedroaf0">Pedroaf0</a></span>
               </div>
-
-
-         
         <i class="material-icons" style="font-size: 40px;padding: 10px;">subtitles</i>  
         <i id="full" onclick="full()" class="material-icons" style="font-size: 40px;padding: 10px;">fullscreen</i>
     </div>
 </div>
  	
-<script src="push.min.js"></script>
 <script>
-
-Push.create("Hello world!", {
-    body: "How's it hangin'?",
-    icon: '/ico.ico',
-    link: 'index.html',
-    requireInteraction: 'true',
-    vibrate:[200,100],
-    onClick: function () {
-        window.focus();
-        this.close();
-    }
-});
   
 // This is the "Offline page" service worker
 
@@ -98,6 +82,7 @@ if ("serviceWorker" in navigator) {
   }
 }
 </script>
+<script src="vibra.js"></script>
 <script src="js.js"></script>
 
 </body>
