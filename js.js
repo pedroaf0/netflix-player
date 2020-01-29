@@ -88,7 +88,7 @@ function load_video(){
 
 function volume(){
     if (video.volume == 0) {
-        video.volume = 0.5;
+        video.volume = 1;
         document.getElementById("volume").innerHTML = "volume_up";
       } else {
         video.volume = 0;
