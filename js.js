@@ -70,7 +70,7 @@ function getUrlVars() {
     });
     return vars;
 }
-video.volume = 0.5;
+video.volume = 1;
 function load_video(){
     console.log(video.src);
     console.log(getUrlVars()["v"]);
@@ -142,5 +142,4 @@ video.ontimeupdate = function(){
   video_slider.max = Math.round(video.duration);
   video_slider.value = Math.round(video.currentTime);
   slider_css(); 
-  vibra();
 }
